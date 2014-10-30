@@ -583,6 +583,7 @@ h1.blog-title {
 .social-media-inline li a {
     font-size: 1.9rem;
     color: #fff;
+    text-decoration: none;
 }
 
 .main-nav {
