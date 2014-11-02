@@ -525,8 +525,6 @@ margin on the iframe, cause it breaks stuff. */
     line-height: 1.7em;
 }
 
-
-
 .background-image {
     background-repeat: no-repeat;
     background-position: center center;
@@ -583,6 +581,11 @@ h1.blog-title {
 .social-media-inline li a {
     font-size: 1.9rem;
     color: #fff;
+    text-decoration: none;
+}
+
+.social-media-inline li a:hover {
+    color: #000;
     text-decoration: none;
 }
 
@@ -724,6 +727,11 @@ body:not(.post-template) .post-title {
 
 .post-title a {
     text-decoration: none;
+    color: #111;
+}
+
+.post-title a:hover {
+    color: #4A4A4A;
 }
 
 .post-excerpt p {
