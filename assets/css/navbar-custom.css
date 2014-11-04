@@ -1,0 +1,19 @@
+.navbar-default  {
+    background: white;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+    font-weight: bold;
+}
+
+.navbar-default ul li {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.navbar-default ul li a {
+    color: black;
+    font-weight: bold;
+    text-transform: lowercase;
+}

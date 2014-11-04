@@ -178,6 +178,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
+    padding-top: 50px;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
@@ -470,9 +471,6 @@ margin on the iframe, cause it breaks stuff. */
    4. General - The main styles for the the theme
    ========================================================================== */
 
-
-/* This comes from Froyo theme */
-
 .header-container, .site-head {
     height: 240px;
 }
@@ -500,10 +498,9 @@ margin on the iframe, cause it breaks stuff. */
     width: 100%;
     top: 0;
     background-size: cover;
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
     text-align: center;
-    /*position: fixed;*/
-    /*z-index: 1;*/
 }
 
 .site-head a {
@@ -589,67 +586,6 @@ h1.blog-title {
     text-decoration: none;
 }
 
-.main-nav {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-	background: black;
-    background-color: black;
-    opacity: 0.8;
-    z-index: 100;
-    text-align: center;
-}
-
-.main-nav-fixed {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    bottom: auto;
-    text-align: right;
-}
-
-.main-nav ul {
-    padding: 0;
-    margin: 0;
-    /*margin-right: 4%;*/
-    display: inline-block;
-}
-
-.main-nav-fixed ul {
-    margin-right: 2%;
-}
-
-.main-nav li {
-    display: inline-block;
-    padding: 5px 6px;
-}
-
-.main-nav li a {
-    color: #fff;
-    border-bottom: 0px solid #fff;
-    font-size: 1.4rem;
-    font-weight: 900;
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
-	letter-spacing: 0.5px;
-	text-decoration: none;
-    text-transform: uppercase;
-}
-
-.main-nav li a:hover {
-    border-width: 2px;
-}
-
-.main-nav .fa {
-	margin-right: 2px;
-    font-size: 1.6rem;
-}
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
     margin: 10px 0 10px 0;
@@ -728,10 +664,11 @@ body:not(.post-template) .post-title {
 .post-title a {
     text-decoration: none;
     color: #111;
+    font-weight: bold;
 }
 
 .post-title a:hover {
-    color: #4A4A4A;
+    color: #696969;
 }
 
 .post-excerpt p {
@@ -834,6 +771,7 @@ body:not(.post-template) .post-title {
 
 .post-template .post-title {
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .post-template .post-meta {
@@ -864,6 +802,10 @@ body:not(.post-template) .post-title {
     display: none;
 }
 
+.post-content h2 {
+    font-weight: bold;   
+}
+
 /* Keep images centred and within the bounds of the post-width */
 .post-content img {
     display: block;
@@ -892,6 +834,7 @@ body:not(.post-template) .post-title {
 .post-footer h4 {
     font-size: 1.8rem;
     margin: 0;
+    font-weight: bold;
 }
 
 .post-footer p {
@@ -1264,7 +1207,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
-    /*background-color: rgba(0,0,0,0.4);*/
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
     padding: 70px 0;
     text-align: center;

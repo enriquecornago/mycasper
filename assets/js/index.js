@@ -60,32 +60,15 @@
 
         var headerText = $('.header-text'),
             headerHeight = $('.site-head').height(),
-            mainContainer = $('.content'),
-            mainNav = $('.main-nav');
+            mainContainer = $('.content')
 
-		function positionNav() {
-          var conOffset = mainContainer.offset().top - $(window).scrollTop();
-          
+		function setOpacity() {
+          var conOffset = mainContainer.offset().top - $(window).scrollTop();       
           headerText.css('opacity', (conOffset / headerHeight));
-
-          if (conOffset - mainNav.height() <= 0) {
-            mainNav.remove();
-            mainNav
-              .appendTo(document.body)
-              .addClass('main-nav-fixed');
-          } else {
-            if (mainNav.hasClass('main-nav-fixed')) {
-              mainNav.remove();
-              mainNav
-                .appendTo('.header-container')
-                .removeClass('main-nav-fixed');
-            }
-          }
 		}
 
-		positionNav();
-
-        $(window).scroll(positionNav);
+		setOpacity();
+        $(window).scroll(setOpacity);
 
     });
 
