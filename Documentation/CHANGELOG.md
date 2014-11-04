@@ -1,3 +1,6 @@
+## Version 0.0.5
+- Fixed pagination
+
 ## Version 0.0.4
 - Added Bootstrap for navbar
 - Greyed out the background picture

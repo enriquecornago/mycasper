@@ -12,8 +12,25 @@
     margin-top: 0px;
 }
 
-.navbar-default ul li a {
+.navbar-default .navbar-nav>li>a {
     color: black;
-    font-weight: bold;
     text-transform: lowercase;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #696969;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: transparent;   
 }
