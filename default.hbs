@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     {{! Page Meta }}
-    <title>{{meta_title}}</title>
+    {{#if post}}
+    <title>{{meta_title}} | {{@blog.title}}</title>
+    {{else}}
+    <title>{{meta_title}} | Mongolia Charity Rally 2015</title>
+    {{/if}}
+    
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />

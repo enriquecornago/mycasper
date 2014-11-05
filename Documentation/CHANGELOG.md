@@ -1,3 +1,6 @@
+## Version 0.0.6
+- Changed CSS to override Bootstrap
+
 ## Version 0.0.5
 - Fixed pagination
 
