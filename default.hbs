@@ -38,14 +38,24 @@
     {{ghost_head}}
     <!--Google Analytics-->
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        var localhostList = ["localhost", "192.168", "127.0"];
+        var localhostListLength = localhostList.length;
+        var production = true;
+        for (var i=0; (i<localhostListLength && production); ++i) 
+        {
+            if (window.location.host.slice(0, localhostList[i].length) == localhostList[i])
+                production = false;
+        }
+        if (production)
+        {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-56025328-1', 'auto');
-      ga('send', 'pageview');
-
+              ga('create', 'UA-56025328-1', 'auto');
+              ga('send', 'pageview');
+        }
     </script>
 </head>
 <body class="{{body_class}}">

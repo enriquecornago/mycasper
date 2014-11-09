@@ -1,3 +1,8 @@
+## Version 0.0.7
+- Changed menu items
+- Disabled GA on localhost
+- Minor bug fixes
+
 ## Version 0.0.6
 - Changed CSS to override Bootstrap
 
