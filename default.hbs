@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/navbar-custom.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     
+    <script src="{{asset "js/utils.js"}}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="{{asset "js/bootstrap.js"}}"></script>
     
@@ -38,15 +39,7 @@
     {{ghost_head}}
     <!--Google Analytics-->
     <script>
-        var localhostList = ["localhost", "192.168", "127.0"];
-        var localhostListLength = localhostList.length;
-        var production = true;
-        for (var i=0; (i<localhostListLength && production); ++i) 
-        {
-            if (window.location.host.slice(0, localhostList[i].length) == localhostList[i])
-                production = false;
-        }
-        if (production)
+        if (isProduction())
         {
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

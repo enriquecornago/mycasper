@@ -902,6 +902,35 @@ body:not(.post-template) .post-title {
     color: #50585D;
 }
 
+.sponsors-list {
+    position: relative;
+    overflow: hidden;   
+    padding-left: 0;
+}
+
+.sponsors-list-item {
+    padding: 40px 0;
+    list-style: none;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+.sponsors-list-item-image .full-img{
+    float: left;
+    width: 30%;
+    margin: 0 0 10px 0;
+}
+
+.sponsors-list-item-text {
+    width: 65%;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 0;
+    /*font-size: 16px;
+    line-height: 24px;*/
+}
+
+
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
@@ -1311,7 +1340,21 @@ body:not(.post-template) .post-title {
     .no-cover.author-head.main-header {
         padding: 0;
     }
-
+    
+    .sponsors-list-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .sponsors-list-item-image .full-img, 
+    .sponsors-list-item-image .img, 
+    .sponsors-list-item-text {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        max-width: 100%;
+        padding-top: 10;
+    }
 }
 
 
@@ -1532,6 +1575,21 @@ body:not(.post-template) .post-title {
 
     .archive-template .main-header .page-description {
         display: none;
+    }
+    
+    .sponsors-list-item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .sponsors-list-item-image .full-img, 
+    .sponsors-list-item-image .img, 
+    .sponsors-list-item-text {
+        float: none;
+        width: auto;
+        margin-left: 0;
+        max-width: 100%;
+        padding-top: 10px;
     }
 
 }
