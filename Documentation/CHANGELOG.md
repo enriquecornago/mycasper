@@ -1,3 +1,6 @@
+## Version 0.0.9
+- Added Ghost png
+
 ## Version 0.0.8
 - Disabled Disqus on localhost
 - Added initial css for Sponsors 
