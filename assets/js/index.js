@@ -60,7 +60,7 @@
 
         var headerText = $('.header-text'),
             headerHeight = $('.site-head').height(),
-            mainContainer = $('.content')
+            mainContainer = $('.content');
 
 		function setOpacity() {
           var conOffset = mainContainer.offset().top - $(window).scrollTop();       
