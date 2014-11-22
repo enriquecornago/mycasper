@@ -12,13 +12,32 @@
     margin-top: 0px;
 }
 
+.navbar-default ul li:hover, 
+.navbar-default ul li:active, 
+.navbar-default ul li:focus{
+    background-color: transparent;
+    background-image: none;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: black;
     text-transform: lowercase;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #696969;
+    font-weight: bold;
+}
+
+.dropdown-menu>li>a {
+    text-transform: lowercase;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:active {
+    background-color: white;
+    font-weight: bold;
+    background-image: none;
 }
 
 .navbar-default .navbar-toggle {
@@ -29,8 +48,4 @@
 .navbar-default .navbar-toggle .icon-bar {
     background-color: black;
     font-weight: bold;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-    background-color: transparent;   
 }

@@ -1,3 +1,6 @@
+## Version 0.1.0
+- Added submenu
+
 ## Version 0.0.9
 - Added Ghost png
 
