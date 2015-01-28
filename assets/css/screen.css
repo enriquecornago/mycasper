@@ -183,7 +183,7 @@ body {
     letter-spacing: 0.01rem;
     font-size: 1.8rem;
     line-height: 1.75em;
-    color: #3A4145;
+    color: black;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -202,7 +202,7 @@ h4, h5, h6 {
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-    color: #2E2E2E;
+    color: black;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
     font-family: "Open Sans", sans-serif;
@@ -827,6 +827,31 @@ body:not(.post-template) .post-title {
     margin: 0 -13%;
 }
 
+.support-content .full-img {
+    width: 126%;
+    max-width: none;
+    margin: 0 -13%;
+}
+
+.pin:hover {
+    opacity: 0.4;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+
+
+.pin p {
+    font: 12px/18px Open Sans, sans-serif;
+	color: #333;
+	margin: 0;
+}
+
 /* The author credit area after the post */
 .post-footer {
     position: relative;
@@ -871,7 +896,7 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer h4 a {
-    color: #2e2e2e;
+    color: black;
     text-decoration: none;
 }
 
@@ -928,6 +953,31 @@ body:not(.post-template) .post-title {
     margin-bottom: 0;
     /*font-size: 16px;
     line-height: 24px;*/
+}
+
+.support-image {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 5px;
+    background: black;
+    z-index: 2;
+    box-shadow: black 0 0 0 0.3px;
+}
+
+.support-image .img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
 }
 
 
@@ -1500,6 +1550,14 @@ body:not(.post-template) .post-title {
     }
 
     .post-content .full-img {
+        width: auto;
+        width: calc(100% + 32px); /* expand with to image + margins */
+        margin: 0 -16px; /* get rid of margins */
+        min-width: 0;
+        max-width: 112%; /* fallback when calc doesn't work */
+    }
+    
+    .support-content .full-img {
         width: auto;
         width: calc(100% + 32px); /* expand with to image + margins */
         margin: 0 -16px; /* get rid of margins */
