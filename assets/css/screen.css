@@ -104,64 +104,6 @@ table { border-collapse: collapse; border-spacing: 0; }
    1. Icons - Sets up the icon font and respective classes
    ========================================================================== */
 
-/* Import the font file with the icons in it */
-@font-face {
-    font-family: "casper-icons";
-    src:url("../fonts/casper-icons.eot");
-    src:url("../fonts/casper-icons.eot?#iefix") format("embedded-opentype"),
-        url("../fonts/casper-icons.woff") format("woff"),
-        url("../fonts/casper-icons.ttf") format("truetype"),
-        url("../fonts/casper-icons.svg#icons") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* Apply these base styles to all icons */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    font-size: 1.5em;
-    text-transform: none;
-    line-height: 1;
-    text-decoration: none !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Each icon is created by inserting the correct character into the
-   content of the :before pseudo element. Like a boss. */
-.icon-ghost:before {
-    content: "\f600";
-}
-.icon-feed:before {
-    content: "\f601";
-}
-.icon-twitter:before {
-    content: "\f602";
-    font-size: 1.1em;
-}
-.icon-google-plus:before {
-    content: "\f603";
-}
-.icon-facebook:before {
-    content: "\f604";
-}
-.icon-arrow-left:before {
-    content: "\f605";
-}
-.icon-stats:before {
-    content: "\f606";
-}
-.icon-location:before {
-    content: "\f607";
-    margin-left: -3px; /* Tracking fix */
-}
-.icon-link:before {
-    content: "\f608";
-}
 
 
 /* ==========================================================================
@@ -173,6 +115,10 @@ html {
     max-height: 100%;
     font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.navbar {
+    font-family: "Magra","magrabold", Arial, sans-serif;
 }
 
 body {
@@ -205,12 +151,12 @@ h4, h5, h6 {
     color: black;
     line-height: 1.15em;
     margin: 0 0 0.4em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Magra","magrabold", Arial, sans-serif;
+    letter-spacing: 0.5px;
 }
 
 h1 {
     font-size: 5rem;
-    letter-spacing: -2px;
     text-indent: -3px;
 }
 
@@ -515,7 +461,6 @@ margin on the iframe, cause it breaks stuff. */
     padding-bottom: 30px;
     text-align: center;
     vertical-align: middle;
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 300;
 	font-size: 17px;
     font-size: 1.7rem;
@@ -535,7 +480,6 @@ margin on the iframe, cause it breaks stuff. */
 
 .home-template h1.blog-title {
     font-size: 5.2rem;
-    letter-spacing: -1px;
     margin-bottom: 10px;
     color: white;
 }
@@ -548,7 +492,6 @@ h1.blog-title {
     letter-spacing: 0.4px;
     margin-bottom: 5px;
     color: white;
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .blog-description {
@@ -592,7 +535,8 @@ h1.blog-title {
     font-size: 5rem;
     letter-spacing: -1px;
     font-weight: 700;
-    font-family: "Open Sans", sans-serif;
+    /*font-family: "Merriweather", serif;;*/
+    font-family: "Magra","magrabold", Arial, sans-serif;
     color: #fff;
 }
 
@@ -601,7 +545,8 @@ h1.blog-title {
     font-size: 2rem;
     line-height: 1.5em;
     font-weight: 400;
-    font-family: "Merriweather", serif;
+    /*font-family: "Merriweather", serif;*/
+    font-family: "Magra","magrabold", Arial, sans-serif;
     letter-spacing: 0.01rem;
     color: rgba(255,255,255,0.8);
 }
@@ -684,7 +629,7 @@ body:not(.post-template) .post-title {
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
@@ -833,21 +778,88 @@ body:not(.post-template) .post-title {
     margin: 0 -13%;
 }
 
-.pin:hover {
-    opacity: 0.4;
-}
-
 .pin img {
 	width: 100%;
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
+    
+}
+
+.form_hover {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 240px;
+}
+
+.form_hover img {
+	height: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	margin-top: 15px;
+    
+}
+
+.form_stats {
+    border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+    text-align: left;   
+}
+
+.form_mission_desc {
+    padding-top: 5px;
 }
 
 
+.donate_button {
+    width: 100%;
+    margin-top: 10px;
+    font: 14px/18px "magra", sans-serif;
+    font-weight: bold;
+}
+
+.panel-heading h3 {
+    font-weight: bold;   
+}
+
+.mission_box:hover .header {
+    transform: translateY(-240px);
+    -webkit-transform: translateY(-240px);
+    -moz-transform: translateY(-240px);
+    -ms-transform: translateY(-240px);
+    -o-transform: translateY(-240px);
+}
+
+.form_hover img {
+    z-index: 4;
+}
+
+.panel_black{
+    height: 240px; 
+    background-color: black; 
+    color: white;   
+}
+
+.panel_white{
+    height: 240px; 
+}
+
+.form_hover .header {
+    position: absolute;
+    top: 240px;
+    opacity: 0.8;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 100%;
+}
 
 .pin p {
-    font: 12px/18px Open Sans, sans-serif;
+    font: 12px/18px "Magra", sans-serif;
 	color: #333;
 	margin: 0;
 }
@@ -1145,7 +1157,7 @@ body:not(.post-template) .post-title {
     width: 80%;
     max-width: 710px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Merriweather", serif;
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -1273,7 +1285,6 @@ body:not(.post-template) .post-title {
     h1.blog-title, .home-template h1.blog-title {
 		font-size: 44px;
         font-size: 4.4rem;
-        letter-spacing: -1px;
         margin: 0 20px;
     }
 
