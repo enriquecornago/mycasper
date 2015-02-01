@@ -773,7 +773,7 @@ body:not(.post-template) .post-title {
 }
 
 .support-content .full-img {
-    width: 126%;
+    width: 100%;
     max-width: none;
     margin: 0 -13%;
 }
@@ -793,12 +793,18 @@ body:not(.post-template) .post-title {
     height: 240px;
 }
 
+.form_hover p {
+    font: 200px "Magra", sans-serif;
+	color: black;
+	margin-top: -33px;
+}
+
 .form_hover img {
 	height: 100%;
 	padding-bottom: 15px;
 	margin-bottom: 5px;
 	margin-top: 15px;
-    
+    z-index: 4;
 }
 
 .form_stats {
@@ -819,6 +825,12 @@ body:not(.post-template) .post-title {
     font: 14px/18px "magra", sans-serif;
     font-weight: bold;
 }
+.donate_button_50 {
+    width: 50%;
+    margin-top: 10px;
+    font: 14px/18px "magra", sans-serif;
+    font-weight: bold;
+}
 
 .panel-heading h3 {
     font-weight: bold;   
@@ -832,8 +844,11 @@ body:not(.post-template) .post-title {
     -o-transform: translateY(-240px);
 }
 
-.form_hover img {
-    z-index: 4;
+.mission_box form img {
+	height: 100%;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+	margin-top: 15px;
 }
 
 .panel_black{
