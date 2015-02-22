@@ -182,12 +182,24 @@ h6 {
 }
 
 a {
-    color: #4A4A4A;
+    color: #06c;
     transition: color ease 0.3s;
 }
 
 a:hover {
-    color: #111;
+    color: #639;
+}
+
+a:visited {
+    color: #639;
+}
+
+a:active {
+    color: #b30000!important;
+}
+
+a:focus {
+    color: #b30000;
 }
 
 p, ul, ol, dl {
@@ -654,6 +666,15 @@ body:not(.post-template) .post-title {
 
 .post-meta a:hover {
     text-decoration: underline;
+    color: #b30000;
+}
+
+.post-meta a:active {
+    color: #b30000!important;
+}
+
+.post-meta a:focus {
+    color: #b30000;
 }
 
 .user-meta {
