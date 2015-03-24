@@ -514,7 +514,7 @@ h1.blog-title {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    box-shadow: 0 4px black;
+    box-shadow: inset 0px 3px 0px 0px black;
 }
 
 .social-media-inline {
@@ -798,9 +798,14 @@ body:not(.post-template) .post-title {
 }
 
 .support-content .full-img {
-    width: 100%;
+    /*width: 100%;*/
     max-width: none;
     margin: 0 -13%;
+}
+
+.support-content >a img{
+    /*width: 100%;*/
+    max-width: 100%;
 }
 
 .pin img {

@@ -1,3 +1,7 @@
+## Version 0.1.2
+- Added new sponsors
+- Added new navigation options
+
 ## Version 0.1.1
 - New Sponsors page template
 
