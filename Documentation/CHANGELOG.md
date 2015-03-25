@@ -1,3 +1,6 @@
+## Version 0.1.3
+- Added subscription button
+
 ## Version 0.1.2
 - Added new sponsors
 - Added new navigation options

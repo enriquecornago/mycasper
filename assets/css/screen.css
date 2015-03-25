@@ -931,6 +931,16 @@ body:not(.post-template) .post-title {
     line-height: 1.75em;
 }
 
+#mc_embed_signup {
+    background:#fff; 
+    clear:left; 
+    font:14px Merriweather, serif; 
+}
+
+#mc_embed_signup .button {
+    background-color:black!important; 
+}
+
 /* list of author links - location / url */
 .author-meta {
     padding: 0;
