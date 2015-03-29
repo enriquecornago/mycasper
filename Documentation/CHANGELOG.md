@@ -1,3 +1,6 @@
+## Version 0.2.0
+- Added images to post loop
+
 ## Version 0.1.3
 - Added subscription button
 
