@@ -73,3 +73,22 @@
     });
 
 }(jQuery));
+
+
+if($("#main").hasClass("content")){
+    $.getScript(siteurl+"/assets/js/helper/jquery.fluidbox.min.js", function() {
+        $.getScript(siteurl+"/assets/js/helper/imagesloaded.pkgd.min.js", function() {
+            function lightBox(){
+                $('.content a').filter(function() {
+                    return $(this).attr('href').match(/\.(jpeg|jpg|png|gif)/i);
+                }).fluidbox({
+                        closeTrigger: [
+                            { selector: '#fluidbox-overlay', event: 'click'         },
+                            { selector: 'window',            event: 'resize scroll' }
+                        ]
+                });
+            }
+            $("#main").imagesLoaded(lightBox);
+        });
+    });
+}

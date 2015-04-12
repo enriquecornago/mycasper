@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.min.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap-theme.min.css"}}">
     <link rel="stylesheet" type="text/css" href="{{asset "css/navbar-custom.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/fluidbox.css"}}" />
     
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     
@@ -68,6 +69,12 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.fluidbox.min.js"}}"></script>
+    <script>
+        $('a').fluidbox({
+            viewportFill: 0.95,
+        });
+    </script>
 
 </body>
 </html>
