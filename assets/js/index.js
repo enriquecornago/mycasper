@@ -74,7 +74,7 @@
 
 }(jQuery));
 
-
+/*TEMPORARILY DISABLING FLUIDBOX AS IT HAS UPSET THE REST OF THE PICTURES IN THE BLOG
 if($("#main").hasClass("content")){
     $.getScript(siteurl+"/assets/js/helper/jquery.fluidbox.min.js", function() {
         $.getScript(siteurl+"/assets/js/helper/imagesloaded.pkgd.min.js", function() {
@@ -92,3 +92,4 @@ if($("#main").hasClass("content")){
         });
     });
 }
+*/
